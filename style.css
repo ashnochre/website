@@ -1,21 +1,53 @@
-header{
-    text-align: center;
-    color: black;
-    height: 60px;
-    background-color: #CC7722;
-    width: 100%;
-    margin-top: 0%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Bitrimus;
+    src: url(fonts/Bitrimus-BLAPB.ttf) format('truetype');
+}
+@font-face {
+    font-family: deltablock;
+    src: url(fonts/DeltaBlock-2Oee3.ttf) format('truetype');
+}
+@font-face {
+    font-family: deltablockitalic;
+    src: url(fonts/DeltaBlockItalic-K7YYZ.ttf) format('truetype');
+}
+@font-face {
+    font-family: expectative;
+    src: url(fonts/Expectative-grK1.ttf) format('truetype');
+}
+@font-face {
+    font-family: lanixox;
+    src: url(fonts/LanixOx-x0R8.ttf) format('truetype');
+}
+@font-face {
+    font-family: pixalated;
+    src: url(fonts/PixelatedEleganceRegular-ovawB.ttf) format('truetype');
+}
+.top{
+    background-color: #CC7722;
+    display: grid;
+    margin: 0;
+    grid-template-columns: 350px 1fr;
+    
+}
 .about{
     text-align: center;
     margin-top: 80px;
-    opacity: 0;
-    transform: translateY(20px);
+    
     animation: fadeUp 1s ease forwards;
+    font-family: deltablock;
     font-size: 60px;
 }
 @keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
     to{
         opacity: 1;
         transform: translateY(0);
@@ -27,33 +59,51 @@ header{
     align-items: center;
     background-color: #CC7722;
     width: 100%;
-    padding: 15px 0;
+    padding: 15px ;
+    margin: 0;
     gap: 20px;
-    margin-top: 20%;
+    animation: fadeUp 1s ease forwards;
 }
 .social img{
     height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-img:hover{
+.social img:hover{
     transform: scale(1.5);
 }
-header{
-    background-color: #CC7722;
-    width: 100%;
-    padding-bottom: 20px;
-}
 .menu{
-    padding-top: 30px;
-    text-align: center;
-    padding-left: 10px;
-    justify-content: center;
-}
-nav a:hover{
-    color: black;
-}
-main{
-    flex: 1;
+    font-family: deltablock;
+    padding: 25px;
+    gap: 20px;
+    display: inline-flex;
+    align-items: center;
 }
 body{
     margin: 0;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+footer{
+    margin-top: auto;
+}
+.cname{
+    font-family: deltablock;
+    font-size: 50px;
+    color: black;
+    margin: 0;
+    padding: 10px;
+    display: block;
+    animation: fadeUp 1s ease forwards;
+
+}
+button{
+    font-family: deltablock;
+    background: none;
+    border: none;
+    cursor: pointer;
+    animation: fadeUp 1s ease forwards;
 }
