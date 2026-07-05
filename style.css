@@ -90,6 +90,11 @@ body{
 footer{
     margin-top: auto;
 }
+
+.logo img{
+    height: 500px;
+    padding: 20px;
+}
 .cname{
     font-family: deltablock;
     font-size: 50px;
